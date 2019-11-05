@@ -8,14 +8,14 @@ url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. 
 baseurl: "" # the subpath of your site, e.g. /blog
 
 urls:
-    - text: Blog
-      url: /blog
+    # - text: Blog
+    #   url: /blog
     - text: About Me
       url: /about
     - text: Contact Me
       url : /contact
-    # - text: Sample Page
-    #   url: /sample-page
+    - text: Publications
+      url: /pubs
 
 # Edit these details 
 
