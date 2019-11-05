@@ -1,40 +1,39 @@
-# Starter Template For devlopr-jekyll
 
-This repo is a faster way to build your Blog using the [devlopr-jekyll](https://devlopr.netlify.com) Jekyll Theme. The site will be then automatically built using Github Pages at http://yourusername.github.io
 
-# Steps to use this template: 
+### Build a free blog using devlopr jekyll and Github Pages
 
-1. Create Your Blog Repository with name "**yourusername.github.io**", using the "**Use This Template** Button of this repo.
+[![Gem Version](https://badge.fury.io/rb/devlopr.svg)](https://badge.fury.io/rb/devlopr)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4232ac2b-63e0-4c78-92e0-e95aad5ab8c3/deploy-status)](https://app.netlify.com/sites/devlopr/deploys)
+![](https://ruby-gem-downloads-badge.herokuapp.com/devlopr?type=total&color=brightgreen&style=plastic)
 
-2. Clone The Repo Locally 
+### Demo - [here](https://devlopr.netlify.com)
 
-`$ git clone https://github.com/yourusername/yourusername.github.io`
+## Build and Deploy a new blog using devlopr-jekyll theme using 3 Easy Steps - [Guide](https://devlopr.netlify.com/guides/2019/05/20/build-a-blog-using-devlopr-jekyll/)
 
-3. Install Dependencies
+## Screenshots:
 
-`$ bundle update`
-`$ bundle install`
+![Screenshot 1](https://raw.githubusercontent.com/sujaykundu777/devlopr-starter/master/assets/img/screenshot1.png)
 
-4. Customize your site :
+![Screenshot 2](https://raw.githubusercontent.com/sujaykundu777/devlopr-starter/master/assets/img/screenshot2.png)
 
-You need to edit the `_config.yml` file to make the site your own.  
+![Screenshot 3](https://raw.githubusercontent.com/sujaykundu777/devlopr-starter/master/assets/img/screenshot3.png)
 
-4. Serve the Site 
+![Screenshot 4](https://raw.githubusercontent.com/sujaykundu777/devlopr-starter/master/assets/img/screenshot4.png)
 
-`$ bundle exec jekyll serve`
 
-5. Visit the site locally at http://localhost:4000
-
-After you are happy with your changes, you can push the changes
+# Run using Docker 
 
 ```
-$ cd yourusername.github.io
-$ git add .
-$ git commit -m "my site changes"
-$ git push origin master"
+$ git clone 
+$ cd repo
+$ export JEKYLL_VERSION=3.8
+$ docker run --rm --volume="$PWD" -it jekyll/jekyll:$JEKYLL_VERSION jekyll build
+$ jekyll serve
 ```
-You can visit your website, which will be live with your changes at http://yourusername.github.io
 
+## Licence
+
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 
 

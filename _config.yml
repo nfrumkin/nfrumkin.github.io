@@ -1,5 +1,3 @@
-remote_theme: sujaykundu777/devlopr-jekyll  # Don't touch ( required for this theme)
-
 # Edit your preferences below 
 title: Natalia Frumkin (Natasha)
 subtitle: HPC & ML Enthusiast
@@ -16,8 +14,8 @@ urls:
       url: /about
     - text: Contact Me
       url : /contact
-    - text: Sample Page
-      url: /sample-page
+    # - text: Sample Page
+    #   url: /sample-page
 
 # Edit these details 
 
@@ -37,7 +35,7 @@ author_work_experiences:
               visibility: true
             - company_name: Visual Information Processing Lab (BU)
               company_logo: vip.jpg
-              company_url: http://vip.bu.edu/
+              company_url: http://vip.bu.edu/projects/vsns/privacy-smartroom/active-illumination/
               designation: Undergraduate Researcher
               description: testbed developer and data collector
               visibility: true
@@ -65,6 +63,12 @@ linkedin_username: nfrumkin
 #for comments using disqus
 disqus_shortname: nfrumkin
 
+# wakatime username (coding activity)
+# wakatime_username: sujaykundu777
+
+# formspree (contact form)
+formspree_email: johndoe@gmail.com
+
 # syntax highlighter
 markdown: kramdown
 highlighter: rouge
@@ -85,8 +89,16 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-remote-theme
-  # - jekyll-archives
+  - jekyll-algolia
+# - jekyll-archives
+
+# algolia search 
+algolia:
+  application_id: D9WA1YKTRQ
+  index_name: blog_posts # You can replace that with whatever name you want
+  files_to_exclude: []
+  nodes_to_index: 'article'
+  search_only_api_key: 58ffdd7cd6c45ec1577a7fcd789b1b9a
 
 # pagination of posts
 paginate: 8
@@ -109,4 +121,22 @@ compress_html:
 #   permalinks:
 #     category: '/category/:name/'
 
-
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
