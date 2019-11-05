@@ -1,10 +1,10 @@
 remote_theme: sujaykundu777/devlopr-jekyll  # Don't touch ( required for this theme)
 
 # Edit your preferences below 
-title: John Doe
-subtitle: Full Stack Web Developer
+title: Natalia Frumkin (Natasha)
+subtitle: HPC & ML Enthusiast
 description: >- # this means to ignore newlines until "baseurl:"
-  John Doe uses devlopr-jekyll - a Jekyll Theme Built For Developers
+  Natasha is a computer engineer who is passionate about learning new skills and teaching them.
 
 url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -22,63 +22,48 @@ urls:
 # Edit these details 
 
 author_logo: profile.png
-author: John Doe
-author_bio: Hi, My Name is John Doe. I love to Code and Design. devlopr-jekyll is a theme built for developers.  
-author_email: "johndoe@gmail.com"
-author_location: India
-author_website_url: "http://johndoe.com"
+author: Natalia Frumkin
+author_bio: Hi, I love cycling, learning about physics phenomena, and writing efficient code.  
+author_email: "nfrumkin@bu.edu"
+author_location: Boston, MA
+author_website_url: "http://nfrumkin.github.io"
 
 author_work_experiences: 
-            - company_name: Google
-              company_logo: google.png
-              company_url: https://google.com
-              designation: Software Engineer
-              description: Worked on various Google Products
+            - company_name: Red Hat
+              company_logo: redhat.png
+              company_url: https://redhat.com
+              designation: AI/Data Science Intern
+              description: researched on time series anomaly detection
               visibility: true
-            - company_name: Microsoft
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
+            - company_name: Visual Information Processing Lab (BU)
+              company_logo: vip.jpg
+              company_url: http://vip.bu.edu/
+              designation: Undergraduate Researcher
+              description: testbed developer and data collector
               visibility: true
 
 author_education_details:
-              - college_logo: mit.png
-                college_name: MIT
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+              - college_logo: bu.png
+                college_name: Boston University
+                college_url: bu.edu
+                college_degree: Computer Engineering
+                description: Bachelor of Science
                 visibility: true
 
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
-                visibility: true
-              - project_thumbnail: programmingebooks.png
-                project_title: Programming Ebooks
-                project_description: A Platform to easily find and read programming books
-                project_url: https://programmingebooks.com
+              - project_thumbnail: hpc.png
+                project_title: BU High Performance Computing
+                project_description: A club for hardware and software optimizations
+                project_url: https://buhpc.com
                 visibility: true
 
 # social links
-twitter_username: johndoe
-github_username:  johndoe
-facebook_username: johndoe
-linkedin_username: johndoe
-behance_username: johndoe
-instagram_username: johndoe
-medium_username: johndoe
-telegram_username: johndoe
-dribbble_username: johndoe
-flickr_username: johndoe
+twitter_username: iCountFromZero
+github_username:  nfrumkin
+linkedin_username: nfrumkin
 
 #for comments using disqus
-disqus_shortname: sujay-kundu  
-
-# wakatime username
-wakatime_username: sujaykundu777
+disqus_shortname: nfrumkin
 
 # syntax highlighter
 markdown: kramdown
