@@ -1,8 +1,8 @@
 # Edit your preferences below 
 title: Natalia Frumkin (Natasha)
-subtitle: HPC & ML Enthusiast
-description: >- # this means to ignore newlines until "baseurl:"
-  Natasha is a computer engineer who is passionate about learning new skills and teaching them.
+subtitle: PhD Student at UT Austin
+# description: >- # this means to ignore newlines until "baseurl:"
+
 
 url: "https://nfrumkin.github.io/" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -10,10 +10,10 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 urls:
     # - text: Blog
     #   url: /blog
+    - text: Home
+      url: /
     - text: About Me
-      url: /about
-    - text: Contact Me
-      url : /contact
+      url : /about
     - text: Publications
       url: /pubs
 
@@ -21,12 +21,14 @@ urls:
 
 author_logo: profile.png
 author: Natalia Frumkin
-author_bio: Hi, I love cycling, learning about physics phenomena, and writing efficient code.  
-author_email: "nfrumkin@bu.edu"
-author_location: Boston, MA
+author_bio: I am a PhD student at the Univeristy of Texas at Austin studying efficient deep learning.
+author_email: "[first initial][last name]>@utexas.edu"
+author_location: Austin, TX
 author_website_url: "http://nfrumkin.github.io"
 
 author_work_experiences: 
+            - company_name: Los Alamos National Labs
+
             - company_name: Red Hat
               company_logo: redhat.png
               company_url: https://redhat.com
@@ -40,20 +42,27 @@ author_work_experiences:
               description: testbed developer and data collector
               visibility: true
 
+
 author_education_details:
+              - college_logo: utexas.png
+                college_degree: The University of Texas at Austin
+                college_url: https://enyac.org/
+                college_name: Electrical & Computer Engineering
+                description: PhD
+                visibility: true
               - college_logo: bu.png
-                college_name: Boston University
-                college_url: bu.edu
-                college_degree: Computer Engineering
+                college_degree: Boston University
+                college_name: Computer Engineering
                 description: Bachelor of Science
+                college_url: https://vip.bu.edu/
                 visibility: true
 
-author_project_details:
-              - project_thumbnail: hpc.png
-                project_title: BU High Performance Computing
-                project_description: A club for hardware and software optimizations
-                project_url: https://buhpc.com
-                visibility: true
+# author_project_details:
+#               - project_thumbnail: hpc.png
+#                 project_title: BU High Performance Computing
+#                 project_description: A club for hardware and software optimizations
+#                 project_url: https://buhpc.com
+#                 visibility: true
 
 # social links
 twitter_username: iCountFromZero
@@ -80,7 +89,7 @@ google_analytics: UA-46783401-10
 # Choose what to show ( can be true or false)
 show_author_work_experiences: true
 show_author_education_details: true
-show_author_project_details: true
+show_author_project_details: false
 
 # dont touch this unless required
 plugins:
