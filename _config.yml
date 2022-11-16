@@ -27,20 +27,33 @@ author_location: Austin, TX
 author_website_url: "http://nfrumkin.github.io"
 
 author_work_experiences: 
-            - company_name: Los Alamos National Labs
-
+            - company_name: Arm Ltd.
+              company_logo: arm.png
+              company_url: https://arm.com
+              designation: Research Intern
+              visibility: True
+            - company_name: Advanced Micro Devices
+              company_logo: amd.png
+              company_url: https://amd.com
+              designation: Research Intern
+              visibility: True
+            - company_name: Los Alamos National Labratory
+              company_logo: lanl.png
+              company_url: https://lanl.gov
+              designation: Supercomputing Intern
+              visibility: True
             - company_name: Red Hat
               company_logo: redhat.png
               company_url: https://redhat.com
               designation: AI/Data Science Intern
-              description: researched on time series anomaly detection
+              description: conducted research on time series anomaly detection
               visibility: true
             - company_name: Visual Information Processing Lab (BU)
               company_logo: vip.jpg
               company_url: http://vip.bu.edu/projects/vsns/privacy-smartroom/active-illumination/
               designation: Undergraduate Researcher
-              description: testbed developer and data collector
-              visibility: true
+              description: developed an illumination testbed for light transfer analysis
+              visibility: false
 
 
 author_education_details:
