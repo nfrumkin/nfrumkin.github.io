@@ -20,9 +20,13 @@ header {
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     margin-left: 20px;
+    object-fit: cover;
+    margin-top: auto;
+    margin-left:auto;
+    display: block;
 }
 
 .profile-name {
@@ -99,10 +103,18 @@ footer {
     color:#fff;
 }
 
+.pub-logo {
+    width: 160px;
+    border-style: none;
+
+}
+
 .company-logo {
     width: 100px;
     height: 100px;
+    object-fit: cover;
 }
+
 
 .project-img {
     width: 300px;

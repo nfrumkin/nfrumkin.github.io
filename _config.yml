@@ -12,41 +12,50 @@ urls:
     #   url: /blog
     - text: Home
       url: /
-    - text: About Me
-      url : /about
-    - text: Publications
-      url: /pubs
+    # - text: Publications
+    #   url: /pubs
+    # - text: About Me
+    #   url : /about
 
 # Edit these details 
 
-author_logo: profile.png
+author_logo: profile_coffee.png
 author: Natalia Frumkin
-author_bio: I am a PhD student at the Univeristy of Texas at Austin studying efficient deep learning.
-author_email: "[first initial][last name]>@utexas.edu"
+author_bio: I am a PhD student at the Univeristy of Texas at Austin with a focus on efficient deep learning and model compression. I'm lucky to work with my advisor, <a target="_blank" href="https://users.ece.utexas.edu/~dianam/">Diana Marculescu</a>, and fellow colleagues in the <a target="_blank" href="https://enyac.org/">EnyAC group</a>.
+author_email: "nfrumkin@utexas.edu"
 author_location: Austin, TX
-author_website_url: "http://nfrumkin.github.io"
 
 author_work_experiences: 
-            - company_name: Arm Ltd.
+            - company_name: Meta
+              company_logo: meta.jpg
+              # company_url: https://arm.com
+              designation: Research Scientist Intern
+              timeline: Summer 2023
+              visibility: True
+            - company_name: Arm Research
               company_logo: arm.png
-              company_url: https://arm.com
+              # company_url: https://arm.com
               designation: Research Intern
+              timeline: Summer 2022
               visibility: True
             - company_name: Advanced Micro Devices
               company_logo: amd.png
-              company_url: https://amd.com
+              # company_url: https://amd.com
               designation: Research Intern
+              timeline: Summer 2021
               visibility: True
             - company_name: Los Alamos National Labratory
               company_logo: lanl.png
-              company_url: https://lanl.gov
+              # company_url: https://lanl.gov
               designation: Supercomputing Intern
+              timeline: Summer 2020
               visibility: True
             - company_name: Red Hat
               company_logo: redhat.png
-              company_url: https://redhat.com
+              # company_url: https://redhat.com
               designation: AI/Data Science Intern
-              description: conducted research on time series anomaly detection
+              timeline: Summer 2018
+              # description: conducted research on time series anomaly detection
               visibility: true
             - company_name: Visual Information Processing Lab (BU)
               company_logo: vip.jpg
@@ -58,16 +67,16 @@ author_work_experiences:
 
 author_education_details:
               - college_logo: utexas.png
-                college_degree: The University of Texas at Austin
-                college_url: https://enyac.org/
-                college_name: Electrical & Computer Engineering
-                description: PhD
+                college_degree: UT Austin
+                # college_url: https://enyac.org/
+                college_name: ECE
+                description: PhD, graduation in May 2025
                 visibility: true
               - college_logo: bu.png
                 college_degree: Boston University
                 college_name: Computer Engineering
-                description: Bachelor of Science
-                college_url: https://vip.bu.edu/
+                description: Bachelor of Science, May 2020
+                # college_url: https://vip.bu.edu/
                 visibility: true
 
 # author_project_details:

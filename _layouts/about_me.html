@@ -1,129 +1,163 @@
---- 
+---
 layout: default 
 ---
 
-    <div class="row">
-        <div class="col-lg-8">
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="row mb-4">
+                <div class="col-md-12">
+                    <h4>{{ site.author_bio }}</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2 class="card-title text-center">Publications</h2>
+            <div class="row mb-4">
+                <div class="col-md-2">
+                    <img src="assets/img/vit-loss.jpg" class="pub-logo" />
+                </div>
+                <div class="col-md-10">
+                    <p>
+                        <a href=""><b>Jumping through Local Minima: Quantization in the Loss Landscape of Vision Transformers</b></a><br>
+                        <strong>Natalia Frumkin</strong>, Dibakar Gope, Diana Marculescu<br>
+                        <i>ICCV, 2023</i>
+                    </p>
+                </div>
+            </div>
+            <div class="row mb-4">
+				<div class="col-md-2">
+					<img src="assets/img/mobiletl.png" class="pub-logo" />
+				</div>
+				<div class="col-md-10">
+					<p>
+						<a href="https://arxiv.org/abs/2212.03246"><b>MobileTL: On-device Transfer Learning with Inverted Residual Blocks</b></a><br>
+						Hung-Yueh Chiang, <strong>Natalia Frumkin</strong>, Feng Liang, Diana Marculescu<br>
+						<i>AAAI, 2023</i>
+					</p>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div class="col-md-2">
+					<img src="assets/img/rl-tune.png" class="pub-logo" />
+				</div>
+				<div class="col-md-10">
+					<p>
+						<a href="https://openreview.net/forum?id=_trbCTrj9xs"><b>RL-Tune: A Deep Reinforcement Learning Assisted Layer-wise Fine-Tuning Approach for Transfer Learning</b></a><br>
+						Tanvir Mahmud, <strong>Natalia Frumkin</strong>, Diana Marculescu<br>
+						<i>ICML Pre-Training Workshop, 2022</i>
+					</p>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div class="col-md-2">
+					<img src="assets/img/cnn-based.png" class="pub-logo img-fluid"/>
+				</div>
+				<div class="col-md-10">
+					<p>
+						<a href="https://ieeexplore.ieee.org/abstract/document/8803016"><b>CNN-Based Indoor Occupant Localization via Active Scene Illumination</b></a><br>
+						Jinyuan Zhao, <strong>Natalia Frumkin</strong>, Prakash Ishwar, Janusz Konrad<br>
+						<i> ICIP 2019</i><br>
+					</p>
+				</div>
+			</div>
+			
+			<div class="row mb-4">
+				<div class="col-md-2">
+					<img src="assets/img/vip.jpg" class="pub-logo img-fluid"/>
+				</div>
+				<div class="col-md-10">
+					<p>
+						<a href="https://openaccess.thecvf.com/content_cvpr_2018_workshops/w32/html/Zhao_Privacy-Preserving_Indoor_Localization_CVPR_2018_paper.html"><b>Privacy-Preserving Indoor Localization via Active Scene Illumination</b></a><br>
+						Jinyuan Zhao, <strong>Natalia Frumkin</strong>, Janusz Konrad, Prakash Ishwar<br>
+						<i>CVPR Workshop, 2018</i><br>
+					</p>
+				</div>
+			</div>		
+        </div>
+
+        {% if site.show_author_work_experiences == true %}
+        <div class="card">
+            <h2 class="card-title text-center">Work Experience</h2>
+            <div class="row mb-4">
+                <div class="col-md-12"> <!-- Increase the column size to col-md-10 -->
+                    <br />
+                    <div class="row">
+                        {% for exp in site.author_work_experiences %}
+                            {% if exp.visibility == true %}
+                            <div class="col-md-6">
+                                <div class="card mb-4">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <img src="/assets/img/{{ exp.company_logo }}" class="company-logo" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h4 class="card-title">{{ exp.company_name }}</h4>
+                                                <h5 class="card-subtitle">{{ exp.designation }}</h5>
+                                                
+                                                <p class="card-subtitle" style="margin-top: 10px;">{{ exp.timeline }}</p>
+                                                <p class="card-text">{{ exp.description }}</p>
+                                                <p class="card-text"><a href="{{ exp.company_url }}">{{ exp.company_url }}</a></p> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        {% endfor %}  
+                    </div>
+                </div>
+            </div>
+        </div>
         
-            {% if site.author_bio %}
-            <div class="card">
-                <h1 class="card-title">About</h1>
-                <p> {{ site.author_bio }}</p>
-            </div>
-            {% endif %}
+        
+        
+        {% endif %}
 
-
-            {% if site.show_author_project_details == true %}
-            <div class="card">
-                <h1 class="card-title">Projects</h1>
-                <br />
-                {% for project in site.author_project_details %}
-                {% if project.visibility == true %}
-                <div class="row">
-                        <div class="col-md-2">
-                            <img src="/assets/img/{{project.project_thumbnail}}" class="company-logo" />
-                        </div>
-                        <div class="col-md-6">
-                            <h4 class="experience-title"> {{ project.project_title }}</h4>
-                            <h6 class="experience-info"> {{ project.project_info}}</h6>
-                            <p class="experience-desc"> {{ project.project_description }} </p>
-                            <p><a href="{{exp.company_url}}">{{ project.project_url}}</a></p> 
-                        </div>
+        {% if site.show_author_education_details == true %}
+        <div class="card">
+            <h2 class="card-title text-center">Education</h2>
+            <div class="row mb-4">
+                <div class="col-md-12"> <!-- Increase the column size to col-md-10 -->
+                    <br />
+                    <div class="row">
+                        {% for detail in site.author_education_details %}
+                            {% if detail.visibility == true %}
+                            <div class="col-md-6">
+                                <div class="card mb-4">
+                                    <div class="row no-gutters">
+                                        <div class="col-md-4">
+                                            <img src="/assets/img/{{ detail.college_logo }}" class="company-logo" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h4 class="card-title">{{ detail.college_degree }}</h4>
+                                                <h5 class="card-subtitle">{{ detail.college_name }}</h5>
+                                                <p class="card-text">{{ detail.description }}</p>
+                                                <p class="card-text"><a href="{{ detail.college_url }}">{{ detail.college_url }}</a></p>                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endif %}
+                        {% endfor %}  
                     </div>
-                    {% endif %}
-                    
-                    {% endfor %}  
+                </div>
             </div>
-            {% endif %}
-
-            {% if site.show_author_work_experiences == true %}
-            <div class="card">
-                <h1 class="card-title"> Work Experience</h1>
-                <br />
-                {% for exp in site.author_work_experiences %}
-                {% if exp.visibility == true %}
-                <div class="row">
-                        <div class="col-md-2">
-                            <img src="/assets/img/{{ exp.company_logo }}" class="company-logo" />
-                        </div>
-                        <div class="col-md-6">
-                            <h4 class="experience-title"> {{ exp.designation }}</h4>
-                            <h6 class="experience-info"> {{ exp.company_name}}</h6>
-                            <p class="experience-desc"> {{ exp.description }} </p>
-                            <p><a href="{{exp.company_url}}">{{ exp.company_url}}</a></p> 
-                        </div>
-                    </div>
-                    {% endif %}
-                    
-                    {% endfor %}  
-            </div>
-            {% endif %}
-
-
-            {% if site.show_author_education_details == true %}
-            <div class="card">
-                <h1 class="card-title"> Education </h1>
-                <br />
-                {% for detail in site.author_education_details %}
-                {% if detail.visibility == true %}
-                <div class="row">
-                        <div class="col-md-2">
-                            <img src="/assets/img/{{ detail.college_logo}}" class="company-logo" />
-                        </div>
-                        <div class="col-md-6">
-                            <h4 class="experience-title"> {{detail.college_degree }}</h4>
-                            <h6 class="experience-info">{{detail.college_name}}</h6>
-                            <p class="experience-desc"> {{detail.description}} </p>
-                            <p><a href="{{detail.college_url}}">{{ detail.college_url}}</a></p>                    
-                        </div>
-                    </div>
-                    {% endif %}
-                    
-                    {% endfor %}  
-            </div>
-            {% endif %}
-
         </div>
-        <div class="col-lg-4">
-    
-            <div class="card">
-                {% if site.author_location %} 
-                <h6>  <i class="fas fa-map-marker-alt"></i> {{ site.author_location }}</h6>
-                {% endif %}
-                
-                {% if site.author_email %}
-                <h6><i class="fas fa-envelope"></i> {{ site.author_email }}</h6>
-                {% endif %}
-                
-                {% if site.author_website_url %}
-                <h6> <i class="fas fa-link"></i> {{ site.author_website_url }} </h6>
-                {% endif %}
-                
-                {% if site.github_username %}
-                  {%- include github_follow_button.html -%} 
-                {% endif %}
-
-                {% if site.twitter_username %}
-                  {%- include twitter_follow_button.html -%} 
-                {% endif %}
-    
-            </div>
-    
-            <!-- <div class="card">
-                <h1> Skills </h1>
-
-                {%- include author_skills.html -%}
-               
-            </div> -->
-    
-            {% if site.wakatime_username %}
-            <div class="card">
-                <h1> Coding Activity </h1>
-                
-                {%- include coding_activity.html -%}
-    
-            </div>
-            {% endif %}
-    
-        </div>
-        </div>
+        
+        {% endif %}
+    <div class="d-flex justify-content-center mb-4"> <!-- Use justify-content-center class to center-align the items -->
+        <h6>
+            <i class="fas fa-envelope"></i> {{ site.author_email }}
+        </h6>
+        <span class="mx-2"></span> <!-- Add two tabs between the items using margin -->
+        {%- include github_follow_button.html -%}
+        <span class="mx-2"></span> <!-- Add two tabs between the items using margin -->
+        {%- include twitter_follow_button.html -%}
+    </div>
+</div>
+</div>
