@@ -44,7 +44,7 @@ author_work_experiences:
               designation: Research Intern
               timeline: Summer 2021
               visibility: True
-            - company_name: Los Alamos National Labratory
+            - company_name: Los Alamos National Labs
               company_logo: lanl.png
               # company_url: https://lanl.gov
               designation: Supercomputing Intern
@@ -90,6 +90,7 @@ author_education_details:
 twitter_username: iCountFromZero
 github_username:  nfrumkin
 linkedin_username: nfrumkin
+scholar_userid: 621LKEAAAAAJ
 
 #for comments using disqus
 disqus_shortname: nfrumkin
