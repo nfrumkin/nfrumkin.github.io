@@ -1,6 +1,8 @@
 body {
     background-color: #D6DDE1 !important;
     font-family: 'Quicksand', sans-serif !important;
+    font-size: 16px;
+    line-height: 1.6;
 }
 html {
     scroll-behavior: smooth;
@@ -8,23 +10,25 @@ html {
 
 header {
     background-color: #F5F5F5;
-    box-shadow: 10px 0px 8px;
-    height: auto;
-    width: 100%;
-    padding: 11px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .container-fluid {
-    margin: 0px !important;
-    padding: 0px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    max-width: 100%;
 }
 
 .profile-img {
-    width: 125px;
-    height: 175px;
-    margin-left: 20px;
-    margin-top: auto;
-    margin-left:auto;
+    width: 100%;
+    max-width: 125px;
+    height: auto;
+    margin: 10px auto;
     display: block;
 }
 
@@ -46,8 +50,10 @@ header {
 }
 
 .card {
-    margin: 20px !important;
-    padding: 20px !important;
+    margin: 10px !important;
+    padding: 15px !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .blog-post{
@@ -88,9 +94,8 @@ header {
 }
 
 .nav-link {
-    font-size: 15px !important;
-    color: #000;
-    font-weight: 600;
+    font-size: 14px !important;
+    padding: 8px 12px !important;
 }
 
 footer {
@@ -103,21 +108,21 @@ footer {
 }
 
 .pub-logo {
-    width: 100%; /* Set fixed width */
-    height: 120px; /* Set fixed height */
-    object-fit: contain; /* Maintain aspect ratio */
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
     display: block;
     margin: 0 auto;
-    border-style: none;
 }
 
 .company-logo {
-    width: 100%; /* Set fixed width */
-    height: 80px; /* Set fixed height */
-    object-fit: contain; /* Maintain aspect ratio */
+    width: 100%;
+    max-width: 80px;
+    height: auto;
+    object-fit: contain;
     display: block;
     margin: 0 auto;
-    border-style: none;
 }
 
 

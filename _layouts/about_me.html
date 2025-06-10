@@ -3,266 +3,259 @@ layout: default
 ---
 <style type="text/css">
 	#teaser {
-		width: 160px;
+		width: 100%;
+		max-width: 160px;
 		border-style: none;
 	}
 
     .card-title {
-        white-space: nowrap;
-        font-size: 1.5rem; /* Default font size */
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 
-    @media (max-width: 768px) {
-        /* Adjust font size for smaller screens */
-        .card-title {
-            font-size: 1rem;
-        }
+    .update-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .update-date {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 0.5rem;
+    }
+
+    .update-details {
+        font-size: 1rem;
+        line-height: 1.5;
     }
 
     .publications-link {
-        color: black; /* Set the text color to black */
-        text-decoration: none; /* Remove underline from the link */
-        vertical-align: middle; /* Align with the icon */
-        margin-left: 5px; /* Add some spacing between the icon and text */
+        color: black;
+        text-decoration: none;
+        vertical-align: middle;
+        margin-left: 5px;
     }
-    .dynamic-font-size {
-        white-space: nowrap; /* Prevent title wrapping */
+
+    @media (max-width: 768px) {
+        .card-title {
+            font-size: 1.3rem;
+        }
+        
+        .update-title {
+            font-size: 1.1rem;
+        }
+
+        .col-md-2 {
+            margin-bottom: 15px;
+        }
+
+        .pub-logo {
+            max-width: 100px;
+        }
+
+        .company-logo {
+            max-width: 60px;
+        }
     }
-    
-    
 </style>
 
-<div class="d-flex justify-content-center align-items-center vh-100">
-    <div class="col-lg-12">
-        <div class="card">
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h4>{{ site.author_bio }}</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <h2 class="card-title text-center">News</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="text-center">{{ site.author_bio }}</h4>
+                    </div>
                 </div>
             </div>
 
-            <!-- Adding current updates -->
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <h4 class="update-title">Natasha @ CVPR 2025!</h4>
-                            <p class="update-date">April 1, 2024</p>
-                            <p class="update-details">I will be on the job search in Nashville! Please have a look at my <a href="/assets/cv.pdf"><b>CV 📄</b></a></p>
-                        </li>
-                        <li class="list-group-item">
-                            <h4 class="update-title">Quamba2 Presented at ICML 2025!</h4>
-                            <p class="update-date">April 1, 2024</p>
-                            <p class="update-details">Our paper titled <a href="https://arxiv.org/abs/2503.22879"><b>Quamba2: A Robust and Scalable Post-training Quantization Framework for Selective State Space Models</b></a> will be presented in Vancouver! Many congrats to my co-authors.</p>
-                        </li>
-                        <!-- <li class="list-group-item">
-                            <h4 class="update-title">Internship at Meta Completed</h4>
-                            <p class="update-date">August 11, 2023</p>
-                            <p class="update-details">I had the pleasure of working with <a href="https://scholar.google.com/citations?user=TNXVwh8AAAAJ&hl=en"><b>Xiao Sun</b></a> and <a href="https://dblp.org/pid/28/8364.html"><b>Dhruv Choudhary</b></a> at Meta and will continue to work with them as a Part-Time Researcher.</p>
-                        </li>
-                        <li class="list-group-item">
-                            <h4 class="update-title">Evol-Q Accepted to ICCV 2023!</h4>
-                            <p class="update-date">August 1, 2023</p>
-                            <p class="update-details">Our paper titled <a href="https://arxiv.org/abs/2308.10814"><b>Jumping through Local Minima: Quantization in the Loss Landscape of Vision Transformers</b></a> will be presented in Paris. Many congrats to my co-authors, <a href="https://dibakar.github.io/"><b>Dibakar Gope</b></a>, and my advisor, Diana Marculescu.</p>
-                        </li> -->
-                        <!-- Add more update items as needed -->
-                    </ul>
+            <div class="card">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="card-title text-center">News</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <h4 class="update-title">Natasha @ CVPR 2025!</h4>
+                                <p class="update-date">April 1, 2024</p>
+                                <p class="update-details">I will be on the job search in Nashville! Please have a look at my <a href="/assets/cv.pdf"><b>CV 📄</b></a></p>
+                            </li>
+                            <li class="list-group-item">
+                                <h4 class="update-title">Quamba2 Presented at ICML 2025!</h4>
+                                <p class="update-date">April 1, 2024</p>
+                                <p class="update-details">Our paper titled <a href="https://arxiv.org/abs/2503.22879"><b>Quamba2: A Robust and Scalable Post-training Quantization Framework for Selective State Space Models</b></a> will be presented in Vancouver! Many congrats to my co-authors.</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="card">
-            <!-- <h2 class="card-title text-center">Publications 
-                <a class="social-link" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">
-                    <i class="fas fa-graduation-cap fa-2x" style="vertical-align: top;"></i>
-                </a>
-            </h2> -->
-            <h2 class="card-title text-center">
-                <a class="publications-link" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Publications</a>
-                <a class="social-link" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">
-                    <i class="fas fa-graduation-cap fa-2x" style="vertical-align: top;"></i>
-                </a>
-            </h2>
-            
-            
-            <div class="row mb-4 align-items-center">
-				<div class="col-md-2">
-					<img src="/assets/img/quamba-2.png" class="pub-logo" />
-				</div>
-				<div class="col-md-10">
-					<p>
-						<a href="https://arxiv.org/abs/2503.22879"><b>Quamba2: A Robust and Scalable Post-training Quantization Framework for Selective State Space Models</b></a><br>
-						Hung-Yueh Chiang, Chi-Chih Chiang, <strong>Natalia Frumkin</strong>, Kai-Chiang Wu, Mohammad S. Abdelfattah, Diana Marculescu<br>
-						<i>ICML, 2025</i>
-					</p>
-				</div>
-			</div>
-			<div class="row mb-4 align-items-center">
-				<div class="col-md-2">
-					<img src="/assets/img/quamba.png" class="pub-logo" />
-				</div>
-				<div class="col-md-10">
-					<p>
-						<a href="https://arxiv.org/abs/2410.13229"><b>Quamba: A post-training quantization recipe for selective state space models</b></a><br>
-						Hung-Yueh Chiang, Chi-Chih Chiang, <strong>Natalia Frumkin</strong>, Kai-Chiang Wu, Diana Marculescu<br>
-						<i>ICLR, 2024</i>
-					</p>
-				</div>
-			</div>
-            <div class="row mb-4 align-items-center">
-                <div class="col-md-2">
-                    <img src="/assets/img/vit-loss.jpg" class="pub-logo" />
+            <div class="card">
+                <h2 class="card-title text-center">
+                    <a class="publications-link" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">Publications</a>
+                    <a class="social-link" href="https://scholar.google.com/citations?user={{ site.scholar_userid }}">
+                        <i class="fas fa-graduation-cap fa-2x" style="vertical-align: top;"></i>
+                    </a>
+                </h2>
+                
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2 col-12 text-center">
+                        <img src="/assets/img/quamba-2.png" class="pub-logo" alt="Quamba2 paper thumbnail" />
+                    </div>
+                    <div class="col-md-10 col-12">
+                        <p>
+                            <a href="https://arxiv.org/abs/2503.22879"><b>Quamba2: A Robust and Scalable Post-training Quantization Framework for Selective State Space Models</b></a><br>
+                            Hung-Yueh Chiang, Chi-Chih Chiang, <strong>Natalia Frumkin</strong>, Kai-Chiang Wu, Mohammad S. Abdelfattah, Diana Marculescu<br>
+                            <i>ICML, 2025</i>
+                        </p>
+                    </div>
                 </div>
-                <div class="col-md-10">
-                    <p>
-                        <a href="https://arxiv.org/abs/2308.10814"><b>Jumping through Local Minima: Quantization in the Loss Landscape of Vision Transformers</b></a><br>
-                        <strong>Natalia Frumkin</strong>, Dibakar Gope, Diana Marculescu<br>
-                        <i>ICCV, 2023</i>
-                    </p>
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2 col-12 text-center">
+                        <img src="/assets/img/quamba.png" class="pub-logo" alt="Quamba paper thumbnail" />
+                    </div>
+                    <div class="col-md-10 col-12">
+                        <p>
+                            <a href="https://arxiv.org/abs/2410.13229"><b>Quamba: A post-training quantization recipe for selective state space models</b></a><br>
+                            Hung-Yueh Chiang, Chi-Chih Chiang, <strong>Natalia Frumkin</strong>, Kai-Chiang Wu, Diana Marculescu<br>
+                            <i>ICLR, 2024</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2 col-12 text-center">
+                        <img src="/assets/img/vit-loss.jpg" class="pub-logo" alt="Vit-loss paper thumbnail" />
+                    </div>
+                    <div class="col-md-10 col-12">
+                        <p>
+                            <a href="https://arxiv.org/abs/2308.10814"><b>Jumping through Local Minima: Quantization in the Loss Landscape of Vision Transformers</b></a><br>
+                            <strong>Natalia Frumkin</strong>, Dibakar Gope, Diana Marculescu<br>
+                            <i>ICCV, 2023</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2 col-12 text-center">
+                        <img src="/assets/img/mobiletl.png" class="pub-logo" alt="MobileTL paper thumbnail" />
+                    </div>
+                    <div class="col-md-10 col-12">
+                        <p>
+                            <a href="https://arxiv.org/abs/2212.03246"><b>MobileTL: On-device Transfer Learning with Inverted Residual Blocks</b></a><br>
+                            Hung-Yueh Chiang, <strong>Natalia Frumkin</strong>, Feng Liang, Diana Marculescu<br>
+                            <i>AAAI, 2023</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2 col-12 text-center">
+                        <img src="/assets/img/rl-tune.png" class="pub-logo" alt="RL-Tune paper thumbnail" />
+                    </div>
+                    <div class="col-md-10 col-12">
+                        <p>
+                            <a href="https://openreview.net/forum?id=_trbCTrj9xs"><b>RL-Tune: A Deep Reinforcement Learning Assisted Layer-wise Fine-Tuning Approach for Transfer Learning</b></a><br>
+                            Tanvir Mahmud, <strong>Natalia Frumkin</strong>, Diana Marculescu<br>
+                            <i>ICML Pre-Training Workshop, 2022</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2 col-12 text-center">
+                        <img src="/assets/img/cnn-based.png" class="pub-logo" alt="CNN-Based paper thumbnail" />
+                    </div>
+                    <div class="col-md-10 col-12">
+                        <p>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/8803016"><b>CNN-Based Indoor Occupant Localization via Active Scene Illumination</b></a><br>
+                            Jinyuan Zhao, <strong>Natalia Frumkin</strong>, Prakash Ishwar, Janusz Konrad<br>
+                            <i> ICIP 2019</i><br>
+                        </p>
+                    </div>
+                </div>
+                <div class="row mb-4 align-items-center">
+                    <div class="col-md-2 col-12 text-center">
+                        <img src="/assets/img/vip.jpg" class="pub-logo" alt="VIP paper thumbnail" />
+                    </div>
+                    <div class="col-md-10 col-12">
+                        <p>
+                            <a href="https://openaccess.thecvf.com/content_cvpr_2018_workshops/w32/html/Zhao_Privacy-Preserving_Indoor_Localization_CVPR_2018_paper.html"><b>Privacy-Preserving Indoor Localization via Active Scene Illumination</b></a><br>
+                            Jinyuan Zhao, <strong>Natalia Frumkin</strong>, Janusz Konrad, Prakash Ishwar<br>
+                            <i>CVPR Workshop, 2018</i><br>
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="row mb-4 align-items-center">
-				<div class="col-md-2">
-					<img src="/assets/img/mobiletl.png" class="pub-logo" />
-				</div>
-				<div class="col-md-10">
-					<p>
-						<a href="https://arxiv.org/abs/2212.03246"><b>MobileTL: On-device Transfer Learning with Inverted Residual Blocks</b></a><br>
-						Hung-Yueh Chiang, <strong>Natalia Frumkin</strong>, Feng Liang, Diana Marculescu<br>
-						<i>AAAI, 2023</i>
-					</p>
-				</div>
-			</div>
-			<div class="row mb-4 align-items-center">
-				<div class="col-md-2">
-					<img src="/assets/img/rl-tune.png" class="pub-logo" />
-				</div>
-				<div class="col-md-10">
-					<p>
-						<a href="https://openreview.net/forum?id=_trbCTrj9xs"><b>RL-Tune: A Deep Reinforcement Learning Assisted Layer-wise Fine-Tuning Approach for Transfer Learning</b></a><br>
-						Tanvir Mahmud, <strong>Natalia Frumkin</strong>, Diana Marculescu<br>
-						<i>ICML Pre-Training Workshop, 2022</i>
-					</p>
-				</div>
-			</div>
-			<div class="row mb-4 align-items-center">
-				<div class="col-md-2">
-					<img src="/assets/img/cnn-based.png" class="pub-logo"/>
-				</div>
-				<div class="col-md-10">
-					<p>
-						<a href="https://ieeexplore.ieee.org/abstract/document/8803016"><b>CNN-Based Indoor Occupant Localization via Active Scene Illumination</b></a><br>
-						Jinyuan Zhao, <strong>Natalia Frumkin</strong>, Prakash Ishwar, Janusz Konrad<br>
-						<i> ICIP 2019</i><br>
-					</p>
-				</div>
-			</div>
-			
-			<div class="row mb-4 align-items-center">
-				<div class="col-md-2">
-					<img src="/assets/img/vip.jpg" class="pub-logo"/>
-				</div>
-				<div class="col-md-10">
-					<p>
-						<a href="https://openaccess.thecvf.com/content_cvpr_2018_workshops/w32/html/Zhao_Privacy-Preserving_Indoor_Localization_CVPR_2018_paper.html"><b>Privacy-Preserving Indoor Localization via Active Scene Illumination</b></a><br>
-						Jinyuan Zhao, <strong>Natalia Frumkin</strong>, Janusz Konrad, Prakash Ishwar<br>
-						<i>CVPR Workshop, 2018</i><br>
-					</p>
-				</div>
-			</div>		
-        </div>
 
-        {% if site.show_author_work_experiences == true %}
-        <div class="card">
-            <h2 class="card-title text-center">Work Experience</h2>
-            <div class="row mb-4 align-items-center">
-                <div class="col-md-12"> <!-- Increase the column size to col-md-10 -->
-                    <br />
-                    <div class="row">
-                        {% for exp in site.author_work_experiences %}
-                            {% if exp.visibility == true %}
-                            <div class="col-md-6">
-                                <div class="card mb-4">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-4 exp-card">
-                                            <img src="/assets/img/{{ exp.company_logo }}" class="company-logo" />
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h4 class="card-t">{{ exp.company_name }}</h4>
-                                                <h5 class="card-sub">{{ exp.designation }}</h5>
-                                                
-                                                <p class="card-sub" style="margin-top: 10px;">{{ exp.timeline }}</p>
-                                                <!-- <p class="card-text">{{ exp.description }}</p>
-                                                <p class="card-text"><a href="{{ exp.company_url }}">{{ exp.company_url }}</a></p>  -->
-                                            </div>
+            {% if site.show_author_work_experiences == true %}
+            <div class="card">
+                <h2 class="card-title text-center">Work Experience</h2>
+                <div class="row">
+                    {% for exp in site.author_work_experiences %}
+                        {% if exp.visibility == true %}
+                        <div class="col-md-6 col-12 mb-4">
+                            <div class="card h-100">
+                                <div class="row g-0">
+                                    <div class="col-4 text-center">
+                                        <img src="/assets/img/{{ exp.company_logo }}" class="company-logo" alt="{{ exp.company_name }} logo" />
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h4 class="card-t">{{ exp.company_name }}</h4>
+                                            <h5 class="card-sub">{{ exp.designation }}</h5>
+                                            <p class="card-sub">{{ exp.timeline }}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            {% endif %}
-                        {% endfor %}  
-                    </div>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
                 </div>
             </div>
-        </div>
-        
-        
-        
-        {% endif %}
+            {% endif %}
 
-        {% if site.show_author_education_details == true %}
-        <div class="card">
-            <h2 class="card-title text-center">Education</h2>
-            <div class="row mb-4 align-items-center">
-                <div class="col-md-12"> <!-- Increase the column size to col-md-10 -->
-                    <br />
-                    <div class="row">
-                        {% for detail in site.author_education_details %}
-                            {% if detail.visibility == true %}
-                            <div class="col-md-6">
-                                <div class="card mb-4">
-                                    <div class="row no-gutters">
-                                        <div class="col-md-4 exp-card">
-                                            <img src="/assets/img/{{ detail.college_logo }}" class="company-logo" />
-                                        </div>
-                                        <div class="col-md-8">
-                                            <div class="card-body">
-                                                <h4 class="card-t">{{ detail.college_degree }}</h4>
-                                                <h5 class="card-sub">{{ detail.college_name }}</h5>
-                                                <p class="card-text">{{ detail.description }}</p>
-                                                <p class="card-text"><a href="{{ detail.college_url }}">{{ detail.college_url }}</a></p>                    
-                                            </div>
+            {% if site.show_author_education_details == true %}
+            <div class="card">
+                <h2 class="card-title text-center">Education</h2>
+                <div class="row">
+                    {% for detail in site.author_education_details %}
+                        {% if detail.visibility == true %}
+                        <div class="col-md-6 col-12 mb-4">
+                            <div class="card h-100">
+                                <div class="row g-0">
+                                    <div class="col-4 text-center">
+                                        <img src="/assets/img/{{ detail.college_logo }}" class="company-logo" alt="{{ detail.college_degree }} logo" />
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="card-body">
+                                            <h4 class="card-t">{{ detail.college_degree }}</h4>
+                                            <h5 class="card-sub">{{ detail.college_name }}</h5>
+                                            <p class="card-text">{{ detail.description }}</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            {% endif %}
-                        {% endfor %}  
-                    </div>
+                        </div>
+                        {% endif %}
+                    {% endfor %}
                 </div>
             </div>
+            {% endif %}
         </div>
-        
-        {% endif %}
-    <div class="d-flex justify-content-center mb-4"> <!-- Use justify-content-center class to center-align the items -->
-        <h6>
-            <i class="fas fa-envelope"></i> {{ site.author_email }}
-        </h6>
-        <span class="mx-2"></span> <!-- Add two tabs between the items using margin -->
-        {%- include github_follow_button.html -%}
-        <span class="mx-2"></span> <!-- Add two tabs between the items using margin -->
-        {%- include twitter_follow_button.html -%}
     </div>
 </div>
+
+<div class="d-flex justify-content-center mb-4">
+    <h6>
+        <i class="fas fa-envelope"></i> {{ site.author_email }}
+    </h6>
+    <span class="mx-2"></span>
+    {%- include github_follow_button.html -%}
+    <span class="mx-2"></span>
+    {%- include twitter_follow_button.html -%}
 </div>
 
 <script>
