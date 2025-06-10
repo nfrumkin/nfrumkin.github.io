@@ -13,7 +13,7 @@ urls:
     # - text: Blog
     #   url: /blog
     - text: Home
-      url: /
+      url: /home
     # - text: CV
     #   url: /assets/cv.pdf
     # - text: Publications
